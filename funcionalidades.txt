@@ -1,0 +1,7 @@
+|================|
+| Projeto Escola |
+|================|
+- Cadastro de novos funcionários
+- Listagem dos funcionários cadastrados
+- Atualização dos dados dos funcionários
+- Exclusão de funcionários
