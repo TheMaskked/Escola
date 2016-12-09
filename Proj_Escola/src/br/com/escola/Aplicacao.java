@@ -1,9 +1,19 @@
 package br.com.escola;
 
-/* Classe Inicial da aplicação (main) */
-public class Aplicacao {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+/* Classe Inicial da aplicaï¿½ï¿½o (main) */
+public class Aplicacao extends Application{
+
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+
+	}
 
 	public static void main(String[] args) {
-		
+
 	}
+
 }
