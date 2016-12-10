@@ -27,6 +27,7 @@ public class Aplicacao extends Application{
 
 	public static void main(String[] args) {
 
+
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("escolaUP");
         EntityManager em = emf.createEntityManager();
         launch(args);
