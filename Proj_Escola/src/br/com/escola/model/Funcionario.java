@@ -1,35 +1,27 @@
 package br.com.escola.model;
-
-// Classe funcionario
+				
 abstract class Funcionario {
-	private String name;
-	private int age;
+	private int id;
 	private float salary;
+	private Cadastro cadastro;
+		
+	/* ---------------------------------\
+	 * Pra gerar o ID do funcionario
+	 * mas as ID's devem ser únicas
+	 * então há um problema aqui a ser
+	 * resolvido.
+	\-----------------------------------*/
 	
-	public String getName(){
-		return this.name;
+	Funcionario() {	
+		this.id=(int)(Math.random())*1000;
 	}
-	
-	public void setName(String nam) {
-		this.name=nam;
+	public int getId(){
+		return this.id;
 	}
-	
-	public int getAge() {
-		return this.age;
-	}
-	
-	public void setAge(int ag){
-		if (ag>0&&ag<120) {
-			this.age=ag;
-		}
-	}
-	
 	public float getSalary(){
 		return this.salary;
 	}
-	
 	public void setAge(float sal) {
 		this.salary=sal;
 	}
-	
 }
