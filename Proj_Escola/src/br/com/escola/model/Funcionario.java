@@ -2,7 +2,6 @@ package br.com.escola.model;
 
 // Classe funcionario
 abstract class Funcionario {
-
 	private String name;
 	private int age;
 	private float salary;
