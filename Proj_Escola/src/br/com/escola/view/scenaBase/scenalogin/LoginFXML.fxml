@@ -40,8 +40,9 @@
          </children>
       </GridPane>
       <Region layoutX="506.0" prefHeight="405.0" prefWidth="209.0" styleClass="imagem" stylesheets="@LoginCss.css" />
-      <Button layoutX="287.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" styleClass="butao1-red" stylesheets="@LoginCss.css" text="Concelar" />
-      <Button layoutX="163.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" styleClass="butao1-red" stylesheets="@LoginCss.css" text="Entra" />
+      <Button fx:id="tbCancelar" layoutX="287.0" layoutY="310.0" mnemonicParsing="false" onAction="#tbCancelarAction" prefHeight="31.0" prefWidth="84.0" styleClass="butao1-red" stylesheets="@LoginCss.css" text="Cancelar" />
+      <Button layoutX="163.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" styleClass="butao1-red" stylesheets="@LoginCss.css" text="Entrar" />
       <Separator layoutX="499.0" orientation="VERTICAL" prefHeight="405.0" prefWidth="7.0" />
+      <Region layoutX="511.0" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
