@@ -53,7 +53,7 @@ public class ControllerSplash implements Initializable{
                         Parent root;
                         root = null;
                         try {
-                            root =FXMLLoader.load(getClass().getResource("/br/com/escola/view/scenaBase/splash/SplashFXML.fxml"));
+                            root =FXMLLoader.load(getClass().getResource("/br/com/escola/view/scenaBase/scenalogin/LoginFXML.fxml"));
 
                         } catch (IIOException ex) {
                             Logger.getAnonymousLogger(ControllerSplash.class.getName()).log(Level.SEVERE,null,ex);
