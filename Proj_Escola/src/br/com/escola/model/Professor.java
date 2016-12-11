@@ -1,42 +1,42 @@
 package br.com.escola.model;
 
-//TODO to implementando ainda...
+import java.util.List;
+
+/**
+ * Professor
+ */
 public class Professor extends Funcionario {
-	
-	private String subject;
-	private Integer workload;
-	private String sector;
-	private String formation;
-	
-	public Professor(String nome, Integer idade, Cargo cargo, Endereco endereco, InfoContato contato, Double salario) {
-		setNome(nome);
-		setIdade(idade);
-		setCargo(cargo);
-		setEndereco(endereco);
-		setContato(contato);
-		setSalario(salario);
+	/**
+	 * Enum das disciplinas disponíves
+	 */
+	public enum Disciplina {
+		PORTUGUES, MATEMATICA, HISTORIA, BIOLOGIA, 
+		QUIMICA, FISICA, INGLES, ESPANHOL, GEOGRAFIA, 
+		EDUCACAO_FISICA, INFORMATICA, FILOSOFIA, SOCIOLOGIA;
 	}
-	
-	public String getSubject(){
-		return subject;
+
+	private Disciplina disciplina;
+	private List<Turma> turmas;
+
+	public Disciplina getDisciplina() {
+		return disciplina;
 	}
-	
-	public Integer getWorkload() {
-		return this.workload;
+
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
 	}
-	public void setWorkload(Integer workld){
-		this.workload=workld;
+
+	public List<Turma> getTurmas() {
+		return turmas;
 	}
-	public String getSector() {
-		return this.sector;
+
+	public void setTurmas(List<Turma> turmas) {
+		this.turmas = turmas;
 	}
-	public void setSector(String sec){
-		this.sector=sec;
+
+	@Override
+	public String toString() {
+		return "Professor [disciplina=" + disciplina + ", turmas=" + turmas + ", info pessoais=" + getInfoContato()
+				+ ", salario=" + getSalario() + "]";
 	}
-	public String getFormation() {
-		return this.formation;
-	}
-	public void setFormation(String form){
-		this.formation=form;
-	}	
 }
