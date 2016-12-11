@@ -1,65 +1,21 @@
 package br.com.escola.model;
 
-import br.com.escola.utils.StringUtils;
-
 /**
- * Funcionário genérico
+ * Funcionário da escola
  */
 public abstract class Funcionario {
-
-	private String nome;
-	private Integer idade;
-	private Cargo cargo;
-	private Endereco endereco;
-	private InfoContato contato;
-	private Double salario;
 	
-	public String getNome() {
-		return nome;
-	}
+	private InfoContato infoContato;
+	private Double salario;
 
-	public void setNome(String nome) {
-		if (StringUtils.isEmpty(nome)) {
-			return;
-		}
-		this.nome = nome;
+	public InfoContato getInfoContato() {
+		return infoContato;
 	}
-
-	public Integer getIdade() {
-		return idade;
+	
+	public void setInfoContato(InfoContato contato) {
+		this.infoContato = contato;
 	}
-
-	public void setIdade(Integer idade) {
-		if (idade < 0 || idade > 150) {
-			return;
-		}
-		this.idade = idade;
-	}
-
-	public Cargo getCargo() {
-		return cargo;
-	}
-
-	public void setCargo(Cargo cargo) {
-		this.cargo = cargo;
-	}
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-
-	public InfoContato getContato() {
-		return contato;
-	}
-
-	public void setContato(InfoContato contato) {
-		this.contato = contato;
-	}
-
+	
 	public Double getSalario() {
 		return salario;
 	}

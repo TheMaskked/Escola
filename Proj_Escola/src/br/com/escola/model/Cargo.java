@@ -1,8 +1,6 @@
 package br.com.escola.model;
 
-/**
- * Enum dos cargos disponíveis na escola
- */
+//TODO para cada cargo uma classe
 public enum Cargo {
 	DIRETOR,
 	PEDAGOGO,

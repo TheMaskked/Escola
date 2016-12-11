@@ -13,16 +13,7 @@ public class Endereco {
 	private String rua;
 	private Integer numero;
 	private String cep;
-
-	public Endereco(String estado, String cidade, String bairro, String rua, Integer numero, String cep) {
-		setEstado(estado);
-		setCidade(cidade);
-		setBairro(bairro);
-		setRua(rua);
-		setNumero(numero);
-		setCep(cep);
-	}
-
+	
 	public String getEstado() {
 		return estado;
 	}
