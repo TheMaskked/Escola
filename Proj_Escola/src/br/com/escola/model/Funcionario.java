@@ -1,35 +1,33 @@
 package br.com.escola.model;
 
 // Classe funcionario
-abstract class Funcionario {
+public abstract class Funcionario {
+	
 	private String name;
-	private int age;
-	private float salary;
+	private Integer age;
+	private Double salary;
 	
-	public String getName(){
-		return this.name;
+	public String getName() {
+		return name;
 	}
 	
-	public void setName(String nam) {
-		this.name=nam;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public int getAge() {
-		return this.age;
+	public Integer getAge() {
+		return age;
 	}
 	
-	public void setAge(int ag){
-		if (ag>0&&ag<120) {
-			this.age=ag;
-		}
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 	
-	public float getSalary(){
-		return this.salary;
+	public Double getSalary() {
+		return salary;
 	}
 	
-	public void setAge(float sal) {
-		this.salary=sal;
-	}
-	
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}	
 }
