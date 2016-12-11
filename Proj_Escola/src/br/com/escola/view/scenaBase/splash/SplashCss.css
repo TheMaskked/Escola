@@ -1,6 +1,10 @@
 .imagem{
     
+<<<<<<< HEAD
     -fx-background-image: url("../../../../../../imagens/logo.png");
+=======
+    -fx-background-image: url("../../../../../../imagens/sge.png");
+>>>>>>> origin/development
 }
 
 .efeito{
