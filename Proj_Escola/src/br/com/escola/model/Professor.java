@@ -36,7 +36,9 @@ public class Professor extends Funcionario {
 
 	@Override
 	public String toString() {
-		return "Professor [disciplina=" + disciplina + ", turmas=" + turmas + ", info pessoais=" + getInfoContato()
-				+ ", salario=" + getSalario() + "]";
+		return "Professor [disciplina=" + disciplina + ", turmas=" + turmas + ", nome=" + getNome()
+				+ ", idade=" + getIdade() + ", identidade()=" + getIdentidade() + ", CPF=" + getCpf()
+				+ ", e-mail()=" + getEmail() + ", telefone()=" + getTelefone() + ", celular()=" + getCelular()
+				+ ", endereco()=" + getEndereco() + ", salario()=" + getSalario() + "]";
 	}
 }
