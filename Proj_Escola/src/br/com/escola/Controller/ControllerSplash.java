@@ -50,6 +50,7 @@ public class ControllerSplash implements Initializable{
                     public void run() {
 
 
+
                         Parent root;
                         root = null;
                         try {
