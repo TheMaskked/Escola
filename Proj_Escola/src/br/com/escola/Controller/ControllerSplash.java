@@ -30,6 +30,8 @@ public class ControllerSplash implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        new SplashScreee().start();
+
 
     }
 
@@ -48,8 +50,6 @@ public class ControllerSplash implements Initializable{
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-
-
 
                         Parent root;
                         root = null;

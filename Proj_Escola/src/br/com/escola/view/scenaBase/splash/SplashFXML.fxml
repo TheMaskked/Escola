@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="roott" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="856.0" styleClass="efeito" stylesheets="@SplashCss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="roott" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="856.0" styleClass="efeito" stylesheets="@SplashCss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.escola.Controller.ControllerSplash">
    <children>
       <Region prefHeight="200.0" prefWidth="200.0" styleClass="imagem" stylesheets="@SplashCss.css" />
    </children>
