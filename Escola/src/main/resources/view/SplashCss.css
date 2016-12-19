@@ -1,0 +1,9 @@
+.imagem{
+	
+    -fx-background-image: url("/imagens/logo.png");
+}
+
+.efeito{
+
+    -fx-background-color: transparent;
+}
