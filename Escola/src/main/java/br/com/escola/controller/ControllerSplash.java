@@ -16,7 +16,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 /**
  * Created by Lucas-PC on 08/12/2016. aqui controller da imagem inicial que e
@@ -60,7 +59,8 @@ public class ControllerSplash implements Initializable {
 						Scene scene = new Scene(root);
 						Stage stage = new Stage();
 						stage.setScene(scene);
-						stage.initStyle(StageStyle.UNDECORATED);
+//						stage.initStyle(StageStyle.UNDECORATED);
+						stage.setResizable(false);
 						stage.show();
 						roott.getScene().getWindow().hide();
 
