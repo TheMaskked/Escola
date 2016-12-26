@@ -1,6 +1,6 @@
 .imagem{
 	
-    -fx-background-image: url("/imagens/logo.png");
+    -fx-background-image: url("../imagens/logosistema.png");
 }
 
 .efeito{
