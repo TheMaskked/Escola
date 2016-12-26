@@ -1,4 +1,4 @@
-package br.com.escola;
+package br.com.escola.application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
