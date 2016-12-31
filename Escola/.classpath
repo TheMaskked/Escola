@@ -25,5 +25,11 @@
 	<classpathentry kind="lib" path="lib/controlsfx-samples-8.40.12.jar"/>
 	<classpathentry kind="lib" path="lib/fxsampler-1.0.9.jar"/>
 	<classpathentry kind="lib" path="lib/jfoenix.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

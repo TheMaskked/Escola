@@ -26,8 +26,8 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <JFXTextField layoutX="130.0" layoutY="112.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Usuário" />
-        <JFXPasswordField layoutX="127.0" layoutY="215.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Senha" />
+        <JFXTextField fx:id="txtUsuario" layoutX="130.0" layoutY="112.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Usuário" />
+        <JFXPasswordField fx:id="txtSenha" layoutX="127.0" layoutY="215.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Senha" />
         <Label layoutX="130.0" layoutY="85.0" text="Usuário" textFill="WHITE">
             <font>
                 <Font size="15.0" />
@@ -38,7 +38,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="136.0" layoutY="279.0" mnemonicParsing="false" styleClass="confimar" stylesheets="@LoginCss.css" text="Confimar">
+        <Button fx:id="btnConfirmar" layoutX="136.0" layoutY="279.0" mnemonicParsing="false" onAction="#logar" styleClass="confimar" stylesheets="@LoginCss.css" text="Confimar">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor></Button>
