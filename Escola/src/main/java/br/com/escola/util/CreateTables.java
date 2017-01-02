@@ -38,8 +38,10 @@ public class CreateTables {
 //				excluir(null);
 //				criarQuery(null);
 				
-				// descomente as linhas abaixo pra criar as tabelas 
-				// (primeiro cria o banco com o nome EscolaDB)
+				/* Descomente as linhas abaixo para criar as tabelas
+				 1° cria o banco com o nome EscolaDB
+				 2° descomente as linhas a seguir e rode esse arquivo
+				*/
 //				Usuario user1 = new Usuario("Lukaz", "abc2016");
 //				Usuario user2 = new Usuario("Mauricio", "1232015");				
 //				salvar(user1);

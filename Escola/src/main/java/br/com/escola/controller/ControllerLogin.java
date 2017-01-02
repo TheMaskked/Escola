@@ -46,7 +46,7 @@ public class ControllerLogin implements Initializable {
 		Usuario usuario = usuarioService.logar(txtUsuario.getText(), txtSenha.getText());
 		
 		if (usuario != null) {
-			// TODO se os dados estiverem corretos, carrega a próxima tela
+			 //TODO se os dados estiverem corretos, carrega a próxima tela
 			System.out.println("Usuário encontrado => " + usuario);
 		} else {
 			// dados digitados estão incorretos

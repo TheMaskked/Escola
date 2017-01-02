@@ -4,8 +4,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import org.apache.log4j.Logger;
-
 /**
  * Durante a execucao do projeto e possivel trabalhar com várias sessões com o banco de dados. Na JPA a sessão com o banco é representa pelo componente EntityManager.
  * 
@@ -17,10 +15,7 @@ import org.apache.log4j.Logger;
  * 
  * @author YaW Tecnologia
  */
-public abstract class JPAUtil {
-
-    private static Logger log = Logger.getLogger(JPAUtil.class);
-    
+public abstract class JPAUtil {    
     /**
      * Unidade de persistencia definida no arquivo
      * <code>persistence.xml</code>
@@ -32,8 +27,7 @@ public abstract class JPAUtil {
         try {
             emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         } catch (Throwable ex) {
-            log.error("N�o conseguiu carregar a EntityManagerFactory: " + ex.getMessage());
-            throw new ExceptionInInitializerError(ex);
+            throw new ExceptionInInitializerError("N�o conseguiu carregar a EntityManagerFactory: " + ex.getMessage());
         }
     }
 
